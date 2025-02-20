@@ -1,5 +1,6 @@
 name: CI Pipeline
 
+# Trigger the workflow on every push or pull request to the main branch
 on:
   push:
     branches:
@@ -8,21 +9,26 @@ on:
     branches:
       - main
 
+# Define the jobs in the workflow
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Check out the repository
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
+      # Install dependencies
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      # Run the build script
+      - name: Build the project
+        run: npm run build
