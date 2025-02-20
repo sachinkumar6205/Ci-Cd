@@ -9,8 +9,17 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinkumar6205/Ci-Cd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sachinkumar6205/Ci-Cd/issues"
+  },
+  "homepage": "https://github.com/sachinkumar6205/Ci-Cd#readme",
+  "description": ""
 }
